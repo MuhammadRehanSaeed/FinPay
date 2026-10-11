@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <includeCallerData>true</includeCallerData>
+
+            <!-- Remove duplicate fields -->
+            <excludeMdcKeyName>logger_name</excludeMdcKeyName>
+            <fieldNames>
+                <timestamp>timestamp</timestamp>
+                <version>[ignore]</version>
+                <levelValue>[ignore]</levelValue>
+                <logger>class</logger>
+                <thread>thread</thread>
+                <message>message</message>
+                <level>level</level>
+                <callerClass>[ignore]</callerClass>
+                <callerMethod>method</callerMethod>
+                <callerFile>[ignore]</callerFile>
+                <callerLine>line</callerLine>
+            </fieldNames>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>

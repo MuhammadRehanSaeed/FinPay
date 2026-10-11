@@ -1,0 +1,59 @@
+# =========================
+# Build & Compilation Outputs
+# =========================
+target/
+build/
+out/
+*.class
+
+# =========================
+# Maven Files
+# =========================
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# IDEs (IntelliJ IDEA, Eclipse, VS Code)
+# =========================
+# IntelliJ workspace files (protects hardcoded configurations/credentials in run configs)
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/shelf/
+.idea/dictionaries/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# =========================
+# Logs & Environment Files
+# =========================
+*.log
+logs/
+.env
+.env.local
+
+# =========================
+# OS Generated Files
+# =========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
